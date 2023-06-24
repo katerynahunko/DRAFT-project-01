@@ -1,21 +1,2 @@
-hero {
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  margin: 0 auto;
-  padding-top: 267px;
-  padding-bottom: 0;
-  padding-left: 242px;
-  padding-right: 20px;
-    background-image:
-    url("/images/bg-icecream-mobile@1x.png");
-}
-
-@media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  hero {
-    background-image: 
-    url("/images/bg-icecream-mobile@2x.png");
-  }
-}
+// hero {
+// }
