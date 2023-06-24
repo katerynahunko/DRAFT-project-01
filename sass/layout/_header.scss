@@ -1,7 +1,37 @@
+.header {
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
 
-
+.header__container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
 
 .mobile-menu__btn {
 background-color: transparent;
 border: none;
 }
+
+.logo-top {
+    position: relative;
+}
+
+.logo-top__ce {
+    font-family: Seymour One;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.1em;
+position: absolute;
+transform: translateY(110%) translateX(-20%);
+}
+
+@supports (-webkit-text-stroke: 0.88px #F8D24E) {
+    .logo-top__ce {
+      text-shadow: none;
+      color: transparent;
+      -webkit-text-stroke: 0.88px #F8D24E;
+    }
+  }

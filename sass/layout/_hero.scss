@@ -1,2 +1,39 @@
 // hero {
 // }
+
+.title {
+  font-family: 'Seymour One';
+font-size: 26px;
+line-height: 33px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FCFCFC;
+}
+
+.products-btn {
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+padding: 11px 26px;
+color: #000000;
+background-color: transparent;
+border: 2px solid #F8D24E;
+border-radius: 8px;
+margin-top: 32px;
+margin-right: 12px;
+}
+
+.hero__link {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #F8D24E;
+}
+
+.hero__image-dots {
+  margin-top: 105px;
+  align-items: right;
+}
