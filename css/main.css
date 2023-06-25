@@ -136,6 +136,7 @@ button {
 
 .hero__images {
   position: relative;
+  margin-top: 30px;
 }
 
 .hero__image-dots {
