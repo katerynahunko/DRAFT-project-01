@@ -136,7 +136,7 @@ button {
 
 .hero__image-dots {
   position: absolute;
-  transform: translate(-5px, 210px);
+  transform: translate(-5px, 130px);
   overflow-x: hidden;
 }
 
