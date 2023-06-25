@@ -4,10 +4,16 @@
 .title {
   font-family: 'Seymour One';
 font-size: 26px;
+font-weight: 400;
 line-height: 33px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FCFCFC;
+max-width: 250px;
+}
+
+.title__span {
+  font-size: 33px;
 }
 
 .products-btn {
