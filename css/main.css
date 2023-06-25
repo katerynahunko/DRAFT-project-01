@@ -147,6 +147,6 @@ button {
 
 .hero__image-icecream {
   position: absolute;
-  transform: translate(60px, -15px);
+  transform: translate(70px, -15px);
   transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }/*# sourceMappingURL=main.css.map */
