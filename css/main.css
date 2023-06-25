@@ -58,6 +58,50 @@ button {
   }
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 300ms linear, visibility 300 linear;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
+.modal {
+  min-width: 90%;
+  height: auto;
+  overflow: auto;
+  margin: 0;
+  background-color: #85A279;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms linear;
+  padding: 15px;
+}
+
+.modal__btn__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
 .header {
   margin-top: 12px;
   margin-bottom: 50px;
@@ -96,6 +140,74 @@ button {
     -webkit-text-stroke: 0.88px #F8D24E;
   }
 }
+.mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #85A279;
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position: fixed;
+}
+
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-menu__close-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 16px;
+  margin-right: 20px;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FCFCFC;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #131313;
+}
+
+.buy-btn {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #F8D24E;
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: transparent;
+  margin-top: 110px;
+}
+
 .title {
   font-family: "Seymour One";
   font-size: 26px;
