@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   background-color: #84A178;
 }
@@ -260,14 +264,13 @@ button {
 
 .hero__image-dots {
   position: absolute;
-  width: 100vw;
-  overflow: clip;
+  min-width: 280px;
   transform: translate(-10px, 160px);
   transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .hero__image-icecream {
   position: absolute;
-  transform: translate(75px, -6px);
+  transform: translate(60px, -10px);
   transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }/*# sourceMappingURL=main.css.map */
