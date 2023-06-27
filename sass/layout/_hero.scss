@@ -66,13 +66,17 @@ margin-bottom: 0px;
 
 .hero__image-dots {
   position: absolute;
+  bottom: 0;
+  left: 0;
   min-width: 280px;
-  transform: translate(0px, 160px);
+  transform: translate(0px, 210px);
   transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .hero__image-icecream {
   position: absolute;
-  transform: translate(60px, -10px);
+  bottom: 0;
+  left: 0;
+  transform: translate(80px, 210px);
   transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
