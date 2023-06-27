@@ -1,0 +1,22 @@
+
+
+
+.products {
+    background-color: #FCFCFC;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 80px 0;
+    background-image: 
+    url("../images/background-mobile@1x.jpg");
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .products {
+      background-image: 
+      url("/images/background-mobile@2x.jpg");
+    }
+  }
