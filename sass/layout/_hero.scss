@@ -1,8 +1,9 @@
 .hero__container {
-  position: relative;
+position: relative;
 margin: auto;
 margin-bottom: 0;
 min-height: 100vh;
+padding-bottom: 0;
 }
 
 .title {
@@ -56,9 +57,10 @@ margin-right: 12px;
 
 .hero__images{
 position: relative;
-margin-top: 20px;
-// height: 39vh;
+margin-top: 30px;
+height: 100%;
 max-width: 100vw;
+// height: 100vh;
 margin-bottom: 0px;
 }
 

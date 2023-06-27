@@ -1,127 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Seymour+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Seymour+One&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
 </head>
+
 <body>
-        <header class="header">
-        <div class="container header__container">
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo-top link" href="index.html">
+        <svg class="logo-top__image" width="22" height="44">
+          <use href="images/icons.svg#icon-logo">
+          </use>
+        </svg><span class="logo-top__ce">ce</span>
+      </a>
+      <button type="button" class="mobile-menu__btn" data-menu-open>
+        <svg class="mobile-menu__btn-icon" width="32" height="32">
+          <use href="images/icons.svg#icon-burger">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+        <div class="container menu__header">
           <a class="logo-top link" href="index.html">
             <svg class="logo-top__image" width="22" height="44">
-                <use href="images/icons.svg#icon-logo">
-                </use>
-              </svg><span class="logo-top__ce">ce</span>
-             </a>
-          <button type="button" class="mobile-menu__btn" data-menu-open>
-            <svg class="mobile-menu__btn-icon" width="32" height="32">
-              <use href="images/icons.svg#icon-burger">
+              <use href="images/icons.svg#icon-logo">
               </use>
+            </svg><span class="logo-top__ce">ce</span>
+          </a>
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="32" height="32">
+              <use href="images/icons.svg#icon-close"></use>
             </svg>
           </button>
-        </div> 
-        <div class="mobile-menu" data-menu>
-          <div class="mobile-menu__container">
-            <div class="container menu__header">
-            <a class="logo-top link" href="index.html">
-              <svg class="logo-top__image" width="22" height="44">
-                  <use href="images/icons.svg#icon-logo">
-                  </use>
-                </svg><span class="logo-top__ce">ce</span>
-               </a>
-            <button type="button" class="mobile-menu__close-btn" data-menu-close>
-              <svg class="mobile-menu__close-icon" width="32" height="32">
-                <use href="images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            </div>
-            <ul class="mobile-menu__list list">
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link current link" href="index.html">Home</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="">How it’s made?</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="">Our products</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link link" href="">Contacts</a>
-              </li>
-            </ul>
-            <button class="modal-btn buy-btn">Buy now
-              <svg class="buy-btn__arrow" width="12" height="12">
-                <use href="images/icons.svg#icon-btn-arrow"></use>
-              </svg>
-            </button>
         </div>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link current link" href="index.html">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <button class="modal-btn buy-btn">Buy now
+          <svg class="buy-btn__arrow" width="12" height="12">
+            <use href="images/icons.svg#icon-btn-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
-        
-      </header>
-      <hero>
-        <div class="container hero__container">
-<h1 class="title">ice cream made with <span class="title__span">passion</span></h1>
-<button class="modal-btn products-btn">Products</button>
+    </div>
+  </header>
 
-<a class="link hero__link" href="">How it’s made?</a>
-<div class="hero__images">
-  <picture class="hero__image-dots">
-    <source srcset="./images/bg-dots-mobile@1x.webp 1x, ./images/bg-dots-mobile@2x.webp 2x"
-     type="image/webp" 
-     />
-  
-      <source srcset="./images/bg-dots-mobile@1x.png 1x, ./images/bg-dots-mobile@2x.png 2x"
-       />
-       <img src="./images/bg-dots-mobile@1x.png" alt="dots-design" />
-  </picture>
-<picture class="hero__image-icecream">
-  <source srcset="./images/bg-icecream-mobile@1x.webp 1x, ./images/bg-icecream-mobile@2x.webp 2x"
-   type="image/webp" 
-   />
+  <hero>
+    <div class="container hero__container">
+      <h1 class="title">ice cream made with <span class="title__span">passion</span></h1>
+      <button class="modal-btn products-btn">Products</button>
+      <a class="link hero__link" href="">How it’s made?</a>
+      <div class="hero__images">
+        <picture class="hero__image-dots">
+          <source srcset="./images/bg-dots-mobile@1x.webp 1x, ./images/bg-dots-mobile@2x.webp 2x" type="image/webp" />
+          <source srcset="./images/bg-dots-mobile@1x.png 1x, ./images/bg-dots-mobile@2x.png 2x" />
+          <img src="./images/bg-dots-mobile@1x.png" alt="dots-design" />
+        </picture>
+        <picture class="hero__image-icecream">
+          <source srcset="./images/bg-icecream-mobile@1x.webp 1x, ./images/bg-icecream-mobile@2x.webp 2x"
+            type="image/webp" />
+          <source srcset="./images/bg-icecream-mobile@1x.png 1x, ./images/bg-icecream-mobile@2x.png 2x" />
+          <img src="./images/bg-icecream-mobile@1x.png" alt="icecreams" />
+        </picture>
+      </div>
+    </div>
+  </hero>
 
-    <source srcset="./images/bg-icecream-mobile@1x.png 1x, ./images/bg-icecream-mobile@2x.png 2x"
-     />
-     <img src="./images/bg-icecream-mobile@1x.png" alt="icecreams" />
-</picture>
-</div>
+  <section class="container products">
+    <div>
+      <p class="products__label">
+        100% natural
+      </p>
+      <h2 class="products__title">products</h2>
 
-</div>
-    </hero>
-
-      <section class="container products">
-        <div>
-<p class="products__label">
-  100% natural
-</p>
- <h2 class="products__title">products</h2>
-
- <h3 class="products__item-title">
- ice cream
-</h3>
- <p class="products__item-dscr">
-  ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
-</p>
-  <h3 class="products__item-title">
-    ice coffee
-  </h3>
-  <p class="products__item-dscr">
-    Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
-  </p>
-  <h3 class="products__item-title">milkshakes</h3>
- <p class="products__item-dscr">
- Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice
-</p>
-</div>
+      <h3 class="products__item-title">
+        ice cream
+      </h3>
+      <p class="products__item-dscr">
+        ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
+      </p>
+      <h3 class="products__item-title">
+        ice coffee
+      </h3>
+      <p class="products__item-dscr">
+        Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor
+        enhancers
+      </p>
+      <h3 class="products__item-title">milkshakes</h3>
+      <p class="products__item-dscr">
+        Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your
+        choice
+      </p>
+    </div>
   </section>
 
-      <script src="./js/modal.js"></script>
-      <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
+
 </html>
