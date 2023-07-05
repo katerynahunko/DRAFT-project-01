@@ -617,6 +617,7 @@ button {
   width: 300px;
   text-align: center;
   overflow: hidden;
+  margin-top: -80px;
 }
 
 .slides {
@@ -662,7 +663,7 @@ button {
 
 .slider__img {
   position: absolute;
-  top: -50px;
+  top: 0px;
   z-index: 10;
 }
 

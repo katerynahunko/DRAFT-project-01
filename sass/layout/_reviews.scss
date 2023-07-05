@@ -25,6 +25,7 @@
     width: 300px;
     text-align: center;
     overflow: hidden;
+    margin-top: -80px;
   }
   
   .slides {
@@ -69,7 +70,7 @@ color: transparent;
 
   .slider__img {
     position: absolute;
-    top: -50px;
+    top: 0px;
     z-index: 10;
   }
   
@@ -97,3 +98,5 @@ color: transparent;
       display: none;
     }
 }
+
+
