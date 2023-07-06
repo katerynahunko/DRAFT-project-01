@@ -594,6 +594,9 @@ button {
   font-weight: 400;
   line-height: 170%;
 }
+.advantages__text:last-child {
+  margin-bottom: 22px;
+}
 
 .reviews {
   background-color: #FCFCFC;
@@ -617,7 +620,7 @@ button {
   width: 300px;
   text-align: center;
   overflow: hidden;
-  margin-top: -80px;
+  margin-top: -100px;
 }
 
 .slides {
@@ -664,7 +667,7 @@ button {
 .slider__img {
   position: absolute;
   top: 0px;
-  z-index: 10;
+  border-radius: 8px;
 }
 
 .slider > a {
@@ -726,4 +729,118 @@ button {
   width: 72px;
   height: 12px;
   color: #D9D9D9;
+}
+
+.contacts {
+  padding: 60px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__item {
+  border-radius: 24px;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  padding-top: 40px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 16px;
+}
+
+.contacts__business-name {
+  color: #131313;
+  text-align: center;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  padding: 4px 22px;
+  border-radius: 4px;
+  background: #F8D24E;
+  max-width: fit-content;
+}
+
+.contacts__city {
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.48px;
+  margin-top: 24px;
+}
+
+.contacts__address {
+  color: #D6936D;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 183%;
+  letter-spacing: 0.48px;
+}
+.contacts__address::after {
+  content: "";
+  display: flex;
+  border-bottom: 1px solid #E1E1E1;
+  width: auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.contacts__business-days {
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 186%;
+  margin-top: 8px;
+}
+
+.contacts__business-hours {
+  color: #ABABAB;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+}
+
+.contacts__link {
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.tel {
+  margin-top: 6px;
+  border-top: 1px solid #E1E1E1;
+  width: auto;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.location-btn {
+  margin-top: 4px;
+}
+
+.franshise-btn {
+  margin-top: 16px;
+  width: 196px;
 }/*# sourceMappingURL=main.css.map */
