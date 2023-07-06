@@ -691,6 +691,13 @@ button {
   background-color: #84A178;
 }
 
+.review__face {
+  margin-top: 188px;
+  border-radius: 50%;
+  width: 85px;
+  height: 84px;
+}
+
 .slider__text {
   color: #FCFCFC;
   text-align: center;
@@ -698,7 +705,7 @@ button {
   font-family: Montserrat;
   font-weight: 400;
   line-height: 255%;
-  margin-top: 150px;
+  margin-top: 32px;
   border-radius: 10px;
   background: #84A178;
   padding: 35px;
