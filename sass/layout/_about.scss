@@ -69,4 +69,20 @@ margin-bottom: 4px;
 
 .read-more-btn {
 margin-top: 24px;
+
+&:hover {
+    background-color: #0A8817;
 }
+
+&:focus {
+        color: #FCFCFC;
+        background-color: #0A8817;
+    }
+}
+
+.read-more-btn:focus {
+    background-color: #0A8817;
+    .main-btn__arrow {
+        fill: #FCFCFC;
+    }
+}    

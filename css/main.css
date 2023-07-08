@@ -46,6 +46,16 @@ button {
   overflow: hidden;
 }
 
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+.main-btn__arrow {
+  margin-bottom: -1px;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -536,6 +546,20 @@ button {
 .read-more-btn {
   margin-top: 24px;
 }
+.read-more-btn:hover {
+  background-color: #0A8817;
+}
+.read-more-btn:focus {
+  color: #FCFCFC;
+  background-color: #0A8817;
+}
+
+.read-more-btn:focus {
+  background-color: #0A8817;
+}
+.read-more-btn:focus .main-btn__arrow {
+  fill: #FCFCFC;
+}
 
 .advantages {
   padding: 60px 0;
@@ -874,11 +898,18 @@ button {
 
 .footer__item:not(:last-child) {
   margin-right: 20px;
-  fill: #FCFCFC;
 }
 
 .footer__link {
   display: flex;
+  border-radius: 50%;
+  fill: #84A178;
+  background-color: #F8D24E;
+  transition: fill 500ms linear;
+}
+
+.footer__link:hover,
+.footer__link:focus {
   fill: #FCFCFC;
 }
 

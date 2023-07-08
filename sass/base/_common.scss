@@ -49,3 +49,13 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+    }
+
+    .main-btn__arrow {
+      margin-bottom: -1px;
+    }

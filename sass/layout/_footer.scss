@@ -31,14 +31,21 @@ margin-bottom: 60px;
 
 .footer__item:not(:last-child) {
         margin-right: 20px;
-        fill: #FCFCFC;
     }
 
     .footer__link {
         display: flex;
-
-    fill: #FCFCFC;
+        border-radius: 50%;
+        fill: #84A178;
+        background-color: #F8D24E;
+        transition: fill 500ms linear;
     }
+
+    .footer__link:hover,
+    .footer__link:focus {
+            fill: #FCFCFC;
+        }
+    
 
     .footer__phone {
         text-align: center;
