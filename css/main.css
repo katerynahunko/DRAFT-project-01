@@ -1,7 +1,3 @@
-* {
-  outline: 1px solid red;
-}
-
 body {
   background-color: #84A178;
 }
@@ -847,6 +843,7 @@ button {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .footer__label {
@@ -866,7 +863,6 @@ button {
   text-transform: uppercase;
   margin-top: 16px;
   margin-bottom: 60px;
-  margin-right: 100px;
 }
 
 .footer__list {
@@ -887,11 +883,7 @@ button {
 }
 
 .footer__phone {
-  border-bottom: 1px solid #E1E1E1;
   text-align: center;
-  padding-bottom: 40px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .footer__label-tel {
@@ -900,7 +892,6 @@ button {
   font-family: Montserrat;
   font-weight: 700;
   line-height: 186%;
-  padding-bottom: 40px;
 }
 
 .footer__tel {
@@ -911,13 +902,17 @@ button {
   line-height: 186%;
 }
 
-.footer__rights {
+.rights {
+  border-top: 1px solid #E1E1E1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.rights__text {
   color: #7A7A7A;
   text-align: center;
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 700;
   line-height: 152%;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

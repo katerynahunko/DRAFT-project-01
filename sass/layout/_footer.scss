@@ -1,5 +1,6 @@
 .footer {
 padding-top: 60px;
+padding-bottom: 40px;
 }
 
 .footer__label {
@@ -19,7 +20,6 @@ letter-spacing: 1.36px;
 text-transform: uppercase;
 margin-top: 16px;
 margin-bottom: 60px;
-margin-right: 100px;
 }
 
 .footer__list {
@@ -41,11 +41,7 @@ margin-right: 100px;
     }
 
     .footer__phone {
-        border-bottom: 1px solid #E1E1E1;
         text-align: center;
-        padding-bottom: 40px;
-        padding-left: 0;
-        padding-right: 0;
     }
 
     .footer__label-tel {
@@ -54,7 +50,6 @@ font-size: 12px;
 font-family: Montserrat;
 font-weight: 700;
 line-height: 186%;
-padding-bottom: 40px;
     }
 
     .footer__tel {
@@ -65,13 +60,17 @@ padding-bottom: 40px;
         line-height: 186%;
     }
 
-    .footer__rights {
-color: #7A7A7A;
-text-align: center;
-font-size: 14px;
-font-family: Montserrat;
-font-weight: 700;
-line-height: 152%;
-margin-top: 20px;
-margin-bottom: 20px;
+    .rights {
+            border-top: 1px solid #E1E1E1;
+            padding-bottom: 20px;
+            padding-top: 20px;
     }
+
+    .rights__text {
+        color: #7A7A7A;
+        text-align: center;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 152%;
+            }
