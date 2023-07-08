@@ -872,6 +872,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .footer__item:not(:last-child) {
@@ -886,9 +887,29 @@ button {
 
 .footer__label-tel {
   color: #131313;
-  text-align: right;
   font-size: 12px;
   font-family: Montserrat;
   font-weight: 700;
   line-height: 186%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.tel {
+  color: #fcfcfc;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 186%;
+}
+
+.footer__right {
+  color: #7A7A7A;
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 152%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
