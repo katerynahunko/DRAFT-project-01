@@ -636,6 +636,7 @@ svg path {
   flex-direction: column;
   align-items: center;
   background-image: url("../images/background-mobile@1x.jpg");
+  padding-bottom: 370px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -765,6 +766,7 @@ svg path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -388px;
 }
 
 .contacts__wrap {
