@@ -866,6 +866,7 @@ button {
   text-transform: uppercase;
   margin-top: 16px;
   margin-bottom: 60px;
+  margin-right: 100px;
 }
 
 .footer__list {
@@ -885,6 +886,14 @@ button {
   fill: #FCFCFC;
 }
 
+.footer__phone {
+  border-bottom: 1px solid #E1E1E1;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .footer__label-tel {
   color: #131313;
   font-size: 12px;
@@ -892,10 +901,9 @@ button {
   font-weight: 700;
   line-height: 186%;
   padding-bottom: 40px;
-  border-bottom: 1px solid #E1E1E1;
 }
 
-.tel {
+.footer__tel {
   color: #fcfcfc;
   font-size: 12px;
   font-family: Montserrat;
@@ -903,7 +911,7 @@ button {
   line-height: 186%;
 }
 
-.footer__right {
+.footer__rights {
   color: #7A7A7A;
   text-align: center;
   font-size: 14px;
