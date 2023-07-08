@@ -175,6 +175,7 @@ margin-top: 40px;
 .products__icon-arrow {
     margin-bottom: 16px;
     margin-top: auto;
+    transition: fill 250ms linear;
 
     &:hover, &:focus {
 fill: #FCFCFC;

@@ -91,29 +91,16 @@ transform: translateY(110%) translateX(-20%);
     margin-bottom: 32px;
 }
 
-
-    .mobile-menu__link {
+  .mobile-menu__link {
 font-family: 'Montserrat';
 font-weight: 700;
 font-size: 32px;
 line-height: 39px;
 color: #FCFCFC;
+transition: color 250ms linear;
 
 &:hover, &:focus {
     color: #131313;
 }
     }
 
-.main-btn {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;   
-    color: #000000;
-    background-color: #F8D24E;
-padding: 12px 36px;
-border-radius: 10px;
-border: transparent;
-margin-top: 110px;
-min-width: 152px;
-}

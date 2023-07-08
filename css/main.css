@@ -123,6 +123,37 @@ svg path {
   cursor: pointer;
 }
 
+.main-btn {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #F8D24E;
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: transparent;
+  margin-top: 110px;
+  min-width: 152px;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.main-btn:hover {
+  background-color: #0A8817;
+}
+
+.main-btn__arrow {
+  transition: fill 250ms linear;
+}
+
+.main-btn:focus {
+  color: #FCFCFC;
+  background-color: #0A8817;
+}
+.main-btn:focus .main-btn__arrow {
+  fill: #FCFCFC;
+}
+
 .header {
   margin-top: 12px;
   margin-bottom: 50px;
@@ -215,23 +246,10 @@ svg path {
   font-size: 32px;
   line-height: 39px;
   color: #FCFCFC;
+  transition: color 250ms linear;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #131313;
-}
-
-.main-btn {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  background-color: #F8D24E;
-  padding: 12px 36px;
-  border-radius: 10px;
-  border: transparent;
-  margin-top: 110px;
-  min-width: 152px;
 }
 
 .hero__container {
@@ -269,6 +287,7 @@ svg path {
   border-radius: 8px;
   margin-top: 32px;
   margin-right: 12px;
+  transition: border 250ms linear;
 }
 .products-btn:hover, .products-btn:focus {
   border: 2px solid #0A8817;
@@ -281,6 +300,7 @@ svg path {
   line-height: 15px;
   text-decoration-line: underline;
   color: #F8D24E;
+  transition: color 250ms linear;
 }
 .hero__link:hover {
   color: #0A8817;
@@ -470,6 +490,7 @@ svg path {
 .products__icon-arrow {
   margin-bottom: 16px;
   margin-top: auto;
+  transition: fill 250ms linear;
 }
 .products__icon-arrow:hover, .products__icon-arrow:focus {
   fill: #FCFCFC;
@@ -545,20 +566,6 @@ svg path {
 
 .read-more-btn {
   margin-top: 24px;
-}
-.read-more-btn:hover {
-  background-color: #0A8817;
-}
-.read-more-btn:focus {
-  color: #FCFCFC;
-  background-color: #0A8817;
-}
-
-.read-more-btn:focus {
-  background-color: #0A8817;
-}
-.read-more-btn:focus .main-btn__arrow {
-  fill: #FCFCFC;
 }
 
 .advantages {
@@ -702,6 +709,7 @@ svg path {
   height: 12px;
   background-color: #d9d9d9;
   margin-top: 12px;
+  transition: background-color 250ms linear;
 }
 
 .slider > a:active {
@@ -905,7 +913,7 @@ svg path {
   border-radius: 50%;
   fill: #84A178;
   background-color: #F8D24E;
-  transition: fill 500ms linear;
+  transition: fill 250ms linear;
 }
 
 .footer__link:hover,
