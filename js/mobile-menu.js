@@ -7,8 +7,13 @@
 
     refs.openMenuBtn.addEventListener("click", toggleModal);
     refs.closeMenuBtn.addEventListener("click", toggleModal);
+    window.addEventListener("scroll", closeMenuOnScroll);
 
     function toggleModal() {
         refs.menu.classList.toggle("is-open");
+    }
+
+    function closeMenuOnScroll() {
+        refs.menu.classList.remove("is-open");
     }
 })();
