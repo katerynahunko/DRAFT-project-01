@@ -1,6 +1,11 @@
 .header {
     margin-top: 12px;
     margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #85A279;
+    padding-top: 12px;
 }
 
 .header__container {
