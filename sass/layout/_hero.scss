@@ -24,17 +24,25 @@ font-weight: 600;
 font-size: 12px;
 line-height: 15px;
 padding: 11px 26px;
+max-width: 108px;
 color: #000000;
 background-color: transparent;
 border: 2px solid #F8D24E;
 border-radius: 8px;
-margin-top: 32px;
-margin-right: 12px;
 transition: border 250ms linear;
 
 &:hover, &:focus {
   border: 2px solid #0A8817;
 }
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0;
+  max-width: 108px;
+ max-height: 38px;
+ margin-top: 32px;
+ margin-right: 12px;
 }
 
 .hero__link {
