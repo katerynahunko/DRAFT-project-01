@@ -1,10 +1,13 @@
 .backdrop {
     position: fixed;
+    z-index: 101;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    // background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: #FCFCFC;
     transition: opacity 300ms linear,
       visibility 300 linear;
   
