@@ -542,7 +542,7 @@ All Rights Reserved.
   </section>
    
 
-  <div class="backdrop is-hidden container" data-modal>
+  <!-- <div class="backdrop is-hidden container" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="modal__btn__close">
         <svg class="modal__icon__close" width="18" height="18">
@@ -553,7 +553,7 @@ All Rights Reserved.
       <h4 class="product-card__title">Buy now</h4>
       <ul class="product-card__list list">
         <li class="product-card__item">
-          <picture>
+          <picture class="product-card__img">
             <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-1-mobile@1x.webp 2x"
               media="()"
               type="image/webp" 
@@ -571,18 +571,112 @@ All Rights Reserved.
           </p>
         </li>
         <li class="product-card__item">
+          <picture class="product-card__img">
+            <source srcset="./images/product-2-mobile@1x.webp 1x, ./images/product-2-mobile@1x.webp 2x"
+              media="()"
+              type="image/webp" 
+              />
 
+              <source srcset="./images/product-2-mobile@1x.png 1x, ./images/product-2-mobile@1x.png 2x"
+              media="()" 
+              />
+
+              <img src="./images/product-2-mobile@1x.png" alt="product-2" class="" />
+            </picture>
           <p class="product-card__text">
-
+            ice coffee
           </p>
         </li>
         <li class="product-card__item">
+          <picture class="product-card__img">
+            <source srcset="./images/product-3-mobile@1x.webp 1x, ./images/product-3-mobile@1x.webp 2x"
+              media="()"
+              type="image/webp" 
+              />
 
+              <source srcset="./images/product-3-mobile@1x.png 1x, ./images/product-3-mobile@1x.png 2x"
+              media="()" 
+              />
+
+              <img src="./images/product-3-mobile@1x.png" alt="product-3" class="" />
+            </picture>
           <p class="product-card__text">
-
+            milkshake
           </p>
         </li>
-      </ul>
+      </ul> -->
+
+      <div class="backdrop is-hidden container" data-modal>
+        <div class="modal">
+          <button data-modal-close type="button" class="modal__btn__close">
+            <svg class="modal__icon__close" width="18" height="18">
+              <use href="images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h4 class="product-card__title">Buy now</h4>
+          <ul class="product-card__list list">
+            <li class="product-card__item">
+              <label>
+                <input type="checkbox" name="product-1">
+                  <picture class="product-card__img">
+                    <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-1-mobile@1x.webp 2x"
+                      media="()"
+                      type="image/webp" 
+                      />
+        
+                      <source srcset="./images/product-1-mobile@1x.png 1x, ./images/product-1-mobile@1x.png 2x"
+                      media="()" 
+                      />
+        
+                      <img src="./images/product-1-mobile@1x.png" alt="product-1" class="" />
+                    </picture>
+                <p class="product-card__text">ice cream</p>
+              </label>
+            </li>
+            <li class="product-card__item">
+              <label>
+                <input type="checkbox" name="product-2">
+                  <picture class="product-card__img">
+                    <source srcset="./images/product-2-mobile@1x.webp 1x, ./images/product-2-mobile@1x.webp 2x"
+                      media="()"
+                      type="image/webp" 
+                      />
+        
+                      <source srcset="./images/product-2-mobile@1x.png 1x, ./images/product-2-mobile@1x.png 2x"
+                      media="()" 
+                      />
+        
+                      <img src="./images/product-2-mobile@1x.png" alt="product-2" class="" />
+                    </picture>
+                <p class="product-card__text">ice coffee</p>
+              </label>
+            </li>
+            <li class="product-card__item">
+              <label>
+                <input type="checkbox" name="product-3">
+                  <picture class="product-card__img">
+                    <source srcset="./images/product-3-mobile@1x.webp 1x, ./images/product-3-mobile@1x.webp 2x"
+                      media="()"
+                      type="image/webp" 
+                      />
+        
+                      <source srcset="./images/product-3-mobile@1x.png 1x, ./images/product-3-mobile@1x.png 2x"
+                      media="()" 
+                      />
+        
+                      <img src="./images/product-3-mobile@1x.png" alt="product-3" class="" />
+                    </picture>
+                <p class="product-card__text">milkshake</p>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+
+
+
       <!-- <form class="contact-form">
         <strong class="contact-form__title">Залиште свої дані, ми вам передзвонимо</strong>
 

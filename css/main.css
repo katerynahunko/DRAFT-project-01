@@ -88,6 +88,7 @@ svg path {
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   border-radius: 10px;
   border: 2px solid #F8D24E;
   background: #FCFCFC;
@@ -106,10 +107,11 @@ svg path {
   min-width: 100%;
   height: auto;
   overflow: auto;
+  overflow-y: scroll;
   margin: 0;
   background-color: #fcfcfc;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
@@ -1015,7 +1017,7 @@ svg path {
 
 .product-card__title {
   margin-top: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   text-align: center;
   color: #131313;
   font-size: 16px;
@@ -1032,9 +1034,21 @@ svg path {
 }
 
 .product-card__item {
+  width: 132px;
+  margin-bottom: 70px;
+  position: relative;
   border-radius: 15px;
-  border-bottom: 2px solid #96AF8C;
+  border: 2px solid #96AF8C;
   box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(212, 20, 67, 0.1);
+}
+
+.product-card__img {
+  position: absolute;
+  top: -50px;
+  border-radius: 132px;
+  background-color: #96AF8C;
+  border-bottom: 6px solid #96AF8C;
+  box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(10, 136, 23, 0.25);
 }
 
 .product-card__text {
@@ -1046,5 +1060,6 @@ svg path {
   line-height: normal;
   letter-spacing: 0.64px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 110px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

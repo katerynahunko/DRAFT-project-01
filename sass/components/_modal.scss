@@ -2,10 +2,11 @@
     min-width: 100%;
     height: auto;
     overflow: auto;
+    overflow-y: scroll;
     margin: 0;
     background-color: #fcfcfc;
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
