@@ -47,11 +47,10 @@ margin-top: 110px;
 margin-bottom: 20px;
     }
 
-    .product-card__checkbox:checked + label {
-        .product-card__item {
-            background-color: #96AF8C;
+    .product-card__item>input:checked + .product-card__img,
+    .product-card__item input:checked + .product-card__text {
+      background-color: #ff0000;
     }
-        }
 
     // .product-card__item:checked + label {
     //     background-color: #ff0000;

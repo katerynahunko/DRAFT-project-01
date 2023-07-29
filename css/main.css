@@ -171,8 +171,12 @@ svg path {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #85A279;
+  background-color: #85a279;
   padding-top: 12px;
+}
+
+.buy-now-btn {
+  display: none;
 }
 
 .header__container {
@@ -204,11 +208,11 @@ svg path {
   transform: translateY(110%) translateX(-20%);
 }
 
-@supports (-webkit-text-stroke: 0.88px #F8D24E) {
+@supports (-webkit-text-stroke: 0.88px #f8d24e) {
   .logo-top__ce {
     text-shadow: none;
     color: transparent;
-    -webkit-text-stroke: 0.88px #F8D24E;
+    -webkit-text-stroke: 0.88px #f8d24e;
   }
 }
 .mobile-menu {
@@ -222,7 +226,7 @@ svg path {
   height: 100%;
   overflow: auto;
   z-index: 100;
-  background-color: #85A279;
+  background-color: #85a279;
   transition: opacity 300ms linear, visibility 300ms linear, width 300ms linear;
 }
 .mobile-menu.is-open {
@@ -251,7 +255,7 @@ svg path {
   background-color: transparent;
   padding: 0;
   border: none;
-  fill: #FCFCFC;
+  fill: #fcfcfc;
 }
 
 .mobile-menu__list {
@@ -267,13 +271,26 @@ svg path {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   transition: color 250ms linear;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #131313;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 12px;
+  }
+  .buy-now-btn {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .mobile-menu__btn {
+    margin-left: 440px;
+  }
+}
 .hero__container {
   position: relative;
   margin: auto;
@@ -943,6 +960,7 @@ svg path {
   font-family: Montserrat;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 232px;
 }
 
 .footer__title {
@@ -954,6 +972,7 @@ svg path {
   text-transform: uppercase;
   margin-top: 16px;
   margin-bottom: 60px;
+  max-width: 200px;
 }
 
 .footer__list {
@@ -1064,6 +1083,7 @@ svg path {
   margin-bottom: 20px;
 }
 
-.product-card__checkbox:checked + label .product-card__item {
-  background-color: #96AF8C;
+.product-card__item > input:checked + .product-card__img,
+.product-card__item input:checked + .product-card__text {
+  background-color: #ff0000;
 }/*# sourceMappingURL=main.css.map */

@@ -1,118 +1,133 @@
 .header {
-   margin-bottom: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #85A279;
-    padding-top: 12px;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #85a279;
+  padding-top: 12px;
+}
+
+.buy-now-btn {
+  display: none;
 }
 
 .header__container {
-    display: flex;
-    align-content: flex-end;
-    justify-content: space-between;
-    margin: auto;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .mobile-menu__btn {
-background-color: transparent;
-border: none;
-margin-top: 14px;
-height: 32px;
-padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 14px;
+  height: 32px;
+  padding: 0;
 }
 
 .logo-top {
-    position: relative;
+  position: relative;
 }
 
 .logo-top__ce {
-    font-family: Seymour One;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: -0.1em;
-position: absolute;
-transform: translateY(110%) translateX(-20%);
+  font-family: Seymour One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.1em;
+  position: absolute;
+  transform: translateY(110%) translateX(-20%);
 }
 
-@supports (-webkit-text-stroke: 0.88px #F8D24E) {
-    .logo-top__ce {
-      text-shadow: none;
-      color: transparent;
-      -webkit-text-stroke: 0.88px #F8D24E;
-    }
+@supports (-webkit-text-stroke: 0.88px #f8d24e) {
+  .logo-top__ce {
+    text-shadow: none;
+    color: transparent;
+    -webkit-text-stroke: 0.88px #f8d24e;
   }
+}
 
 .mobile-menu {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    overflow: auto;
-    // padding-top: 16px;
-    // padding-right: 20px;
-    z-index: 100;
-    background-color: #85A279;
-    transition: 
-    opacity 300ms linear,
-      visibility 300ms linear,
-      width 300ms linear;
-  
-    &.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      position: fixed;
-      width: 100%;
-      overflow-y: hidden;
-    }
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: auto;
+  // padding-top: 16px;
+  // padding-right: 20px;
+  z-index: 100;
+  background-color: #85a279;
+  transition: opacity 300ms linear, visibility 300ms linear, width 300ms linear;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: fixed;
+    width: 100%;
+    overflow-y: hidden;
   }
+}
 
-  .mobile-menu__container {
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-  }
+.mobile-menu__container {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
 
-  .menu__header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 12px;
-  }
+.menu__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 12px;
+}
 
-  .mobile-menu__close-btn {
-     background-color: transparent;
-    padding: 0;
-    border: none;
-    fill:#FCFCFC;
-      }
+.mobile-menu__close-btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  fill: #fcfcfc;
+}
 
-      .mobile-menu__list {
-    padding-top: 50px;
-    // padding-left: 32px;
-    // padding-bottom: 48px;
-      }
+.mobile-menu__list {
+  padding-top: 50px;
+  // padding-left: 32px;
+  // padding-bottom: 48px;
+}
 
 .mobile-menu__item:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
-  .mobile-menu__link {
-font-family: 'Montserrat';
-font-weight: 700;
-font-size: 32px;
-line-height: 39px;
-color: #FCFCFC;
-transition: color 250ms linear;
+.mobile-menu__link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fcfcfc;
+  transition: color 250ms linear;
 
-&:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #131313;
+  }
 }
-    }
 
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 12px;
+  }
+  .buy-now-btn {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .mobile-menu__btn {
+margin-left: 440px;
+  }
+}
