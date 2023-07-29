@@ -76,28 +76,43 @@
 
   <section class="hero">
     <div class="container hero__container">
+      <div class="hero__wrap">
       <h1 class="title">ice cream made with <span class="title__span">passion</span></h1>
+      <div class="hero__side-info">
+        <ul class="hero__side-list list">
+          <li class="hero__side-items">
+        <p class="hero__side-numbers">
+        16
+        </p>
+        <p class="hero__side-text">
+          cafes
+        </p>
+          </li>
+          <li>
+            <p class="hero__side-numbers">
+        23
+            </p>
+            <p class="hero__side-text">
+              food trucks
+            </p>
+          </li>
+        </ul>
+              </div>
+            </div>
       <a class="link btn-link" href="#products">
       <button class="modal-btn products-btn">Products</button>
     </a>
       <a class="link hero__link" href="#advantages">How it’s made?</a>
-      <picture class="hero__image-icecream-plate">
 
-        <source srcset="./images/ice-cream-plate-desktop@1x.webp 1x, ./images/ice-cream-plate-desktop@2x.webp 2x" 
-        media="(min-width: 1200px)"
-        type="image/webp" />
-
-        <source srcset="./images/ice-cream-plate-desktop@1x.png 1x, ./images/ice-cream-plate-desktop@2x.png 2x" 
-        media="(min-width: 1200px)"/>
-
-        <source srcset="./images/ice-cream-plate-tablet@1x.webp 1x, ./images/ice-cream-plate-tablet@2x.webp 2x" 
-        media="(min-width: 768px)"
-        type="image/webp" />
-
-        <source srcset="./images/ice-cream-plate-tablet@1x.png 1x, ./images/ice-cream-plate-tablet@2x.png 2x" 
-        media="(min-width: 768px)"/>
-       
-        <img src="./images/ice-cream-plate-tablet@1x.png" alt="icecream-plate" />
+      <p class="hero__text">
+        Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!
+      </p>
+      <a class="hero__icon-arrow" href="#products">
+        <svg width="40" height="16">
+          <use href="images/icons.svg#icon-product-arrow">
+          </use>
+        </svg>
+      </a>
       <div class="hero__images">
         <picture class="hero__image-dots">
 
@@ -123,6 +138,24 @@
           media="()"/>
           
           <img src="./images/bg-dots-mobile@1x.png" alt="dots-design" />
+        </picture>
+        <picture class="hero__image-icecream-plate">
+
+          <source srcset="./images/ice-cream-plate-desktop@1x.webp 1x, ./images/ice-cream-plate-desktop@2x.webp 2x" 
+          media="(min-width: 1200px)"
+          type="image/webp" />
+  
+          <source srcset="./images/ice-cream-plate-desktop@1x.png 1x, ./images/ice-cream-plate-desktop@2x.png 2x" 
+          media="(min-width: 1200px)"/>
+  
+          <source srcset="./images/ice-cream-plate-tablet@1x.webp 1x, ./images/ice-cream-plate-tablet@2x.webp 2x" 
+          media="(min-width: 768px)"
+          type="image/webp" />
+  
+          <source srcset="./images/ice-cream-plate-tablet@1x.png 1x, ./images/ice-cream-plate-tablet@2x.png 2x" 
+          media="(min-width: 768px)"/>
+         
+          <img src="./images/ice-cream-plate-tablet@1x.png" alt="icecream-plate" />
         </picture>
         <picture class="hero__image-icecream">
 
@@ -156,12 +189,12 @@
     </div>
   </section>
 
-  <section id="products" class="container products">
+  <section class="products" id="products" class="container">
     <p class="products__label">
       100% natural
     </p>
     <h2 class="products__title">products</h2>
-<ul>
+<ul class="products__list list">
 <li class="products__wrap icecream-product">
     <h3 class="products__item-title">
       ice cream
@@ -218,6 +251,25 @@
     </h2>
     <div class="about__img-wrapper">
       <picture class="about__image">
+
+        <source srcset="./images/cow-desktop@1x.webp 1x, ./images/cow-desktop@2x.webp 2x"
+        media="(min-width: 1200px)"
+        type="image/webp" 
+        />
+
+        <source srcset="./images/cow-desktop@1png 1x, ./images/cow-desktop@2x.png 2x"
+        media="(min-width: 1200px)" 
+        />
+        
+        <source srcset="./images/cow-tablet@1x.webp 1x, ./images/cow-tablet@2x.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp" 
+        />
+
+        <source srcset="./images/cow-tablet@1png 1x, ./images/cow-tablet@2x.png 2x"
+        media="(min-width: 768px)" 
+        />
+
         <source srcset="./images/cow-mobile@1x.webp 1x, ./images/cow-mobile@2x.webp 2x"
          media="(min-width: )"
          type="image/webp" 
@@ -253,7 +305,7 @@
 <h2 class="visually-hidden">
   Advantages
 </h2>
-<ul class="list">
+<ul class="advantages__list list">
   <li class="advantages__item">
 <div class="advantages__icon-wrap">
 <svg class="advantages__icon" width="36" height="36">

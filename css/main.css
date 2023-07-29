@@ -69,11 +69,6 @@ svg path {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -281,6 +276,7 @@ svg path {
 @media screen and (min-width: 768px) {
   .header {
     margin-top: 12px;
+    padding-bottom: 12px;
   }
   .buy-now-btn {
     display: block;
@@ -296,6 +292,16 @@ svg path {
   margin: auto;
 }
 
+.hero__wrap {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .title {
   font-family: "Seymour One";
   font-size: 26px;
@@ -303,7 +309,7 @@ svg path {
   line-height: 33px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #FCFCFC;
+  color: #fcfcfc;
   max-width: 250px;
 }
 
@@ -320,12 +326,12 @@ svg path {
   max-width: 108px;
   color: #000000;
   background-color: transparent;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   border-radius: 8px;
   transition: border 250ms linear;
 }
 .products-btn:hover, .products-btn:focus {
-  border: 2px solid #0A8817;
+  border: 2px solid #0a8817;
 }
 
 .btn-link {
@@ -343,14 +349,14 @@ svg path {
   font-size: 12px;
   line-height: 15px;
   text-decoration-line: underline;
-  color: #F8D24E;
+  color: #f8d24e;
   transition: color 250ms linear;
 }
 .hero__link:hover {
-  color: #0A8817;
+  color: #0a8817;
 }
 .hero__link:focus {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .hero__images {
@@ -392,23 +398,120 @@ svg path {
   .hero__image-icecream {
     right: 0;
     left: unset;
-    transform: translate(-8px, -80px);
+    transform: translate(-28px, -80px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__image-icecream {
+    transform: translate(-58px, -80px);
   }
 }
 
+.hero__image-icecream-plate {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__image-icecream-plate {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(30px, -92px);
+    transition: transform 800ms linear;
+  }
+}
+
+.hero__text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    display: block;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 165px;
+    margin-left: 216px;
+    margin-top: 36px;
+    position: absolute;
+  }
+}
+
+.hero__icon-arrow {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__icon-arrow {
+    display: block;
+    position: absolute;
+    fill: #fcfcfc;
+    margin-top: 140px;
+    margin-left: 216px;
+  }
+}
+
+.hero__side-info {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero__side-numbers {
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+
+.hero__side-text {
+  color: #fcfcfc;
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 400;
+}
+
 .products {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   margin: 0 auto;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: url("../images/background-mobile@1x.jpg");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products {
-    background-image: url("/images/background-mobile@2x.jpg");
+    background-image: url("../images/background-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    background-image: url("../images/background-tablet@1x.jpg");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products {
+    background-image: url("../images/background-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url("../images/background-desktop@1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url("../images/background-desktop@2x.jpg");
   }
 }
 .products__label {
@@ -430,6 +533,11 @@ svg path {
   text-transform: uppercase;
   color: #131313;
   margin-top: 12px;
+}
+
+.products__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .products__item-title {
@@ -472,7 +580,6 @@ svg path {
   content: "";
   width: 200px;
   height: 200px;
-  background: url(<path-to-image>), lightgray 0.845px -34.77px/100% 149.982% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
   z-index: 10;
@@ -493,7 +600,7 @@ svg path {
 }
 
 .icecream-product {
-  background: #AEC6A5;
+  background: #aec6a5;
 }
 
 .icecream-product::before {
@@ -506,12 +613,12 @@ svg path {
 }
 
 .icecream-product::after {
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #D9D9D9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #d9d9d9;
   box-shadow: 0px 5.3421931267px 20.0332221985px 0px rgba(10, 136, 23, 0.25);
 }
 
 .icecoffee-product {
-  background: #EFD478;
+  background: #efd478;
 }
 
 .icecoffee-product::before {
@@ -524,12 +631,12 @@ svg path {
 }
 
 .icecoffee-product::after {
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #D9D9D9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #d9d9d9;
   box-shadow: 0px 5.4039735794px 20.2649002075px 0px rgba(153, 114, 23, 0.25);
 }
 
 .milkshakes-product {
-  background: #D6936D;
+  background: #d6936d;
 }
 
 .milkshakes-product::before {
@@ -542,7 +649,7 @@ svg path {
 }
 
 .milkshakes-product::after {
-  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%), #D9D9D9;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%), #d9d9d9;
   box-shadow: 0px 5.4133329391px 20.2999992371px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -552,9 +659,28 @@ svg path {
   transition: fill 250ms linear;
 }
 .products__icon-arrow:hover, .products__icon-arrow:focus {
-  fill: #FCFCFC;
+  fill: #fcfcfc;
 }
 
+@media screen and (min-width: 768px) {
+  .products__wrap {
+    width: 220px;
+    min-height: 468px;
+  }
+  .products__wrap:not(:last-child) {
+    margin-right: 16px;
+  }
+  .products__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .products__label {
+    font-size: 22px;
+  }
+  .products__title {
+    font-size: 34px;
+  }
+}
 .about {
   padding: 60px 0;
   margin: 0 auto;
@@ -564,7 +690,7 @@ svg path {
 }
 
 .about__label {
-  color: #FCFCFC;
+  color: #fcfcfc;
   text-align: center;
   font-size: 18px;
   font-family: Montserrat;
@@ -574,7 +700,7 @@ svg path {
 }
 
 .about__title {
-  color: #FCFCFC;
+  color: #fcfcfc;
   text-align: center;
   font-size: 30px;
   font-family: Seymour One;
@@ -602,14 +728,14 @@ svg path {
   left: 50%;
   transform: translate(-140px, -10px);
   z-index: 20;
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #D9D9D9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #d9d9d9;
   border-top: 20px solid rgba(248, 210, 78, 0.7);
   box-shadow: 0px 4.48px 16.82px 0px rgba(153, 114, 23, 0.25);
 }
 
 .about__text {
   width: 220px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   text-align: center;
   font-size: 12px;
   font-family: Montserrat;
@@ -627,6 +753,34 @@ svg path {
   margin-top: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__label {
+    font-size: 22px;
+  }
+  .about__title {
+    font-size: 34px;
+    width: unset;
+    letter-spacing: 2.04px;
+  }
+  .about__image {
+    transform: translate(-350px, 0px);
+  }
+  .about__first-text {
+    margin-top: unset;
+    text-align: left;
+    margin-left: 240px;
+    width: 334px;
+  }
+  .about__text {
+    text-align: left;
+    margin-left: 240px;
+    width: 334px;
+  }
+  .read-more-btn {
+    margin-top: 32px;
+    margin-left: 72px;
+  }
+}
 .advantages {
   padding: 60px 0;
   margin: 0 auto;
@@ -635,11 +789,15 @@ svg path {
   align-items: center;
 }
 
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .advantages__item:not(:last-child) {
   margin-bottom: 28px;
@@ -684,6 +842,30 @@ svg path {
   margin-bottom: 22px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    margin-bottom: 26px;
+  }
+  .advantages__list {
+    flex-direction: row;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: unset;
+    margin-right: 80px;
+  }
+  .advantages__subtitle {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+  .advantages__icon-wrap {
+    margin-bottom: 32px;
+  }
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.74;
+    width: 152px;
+  }
+}
 .reviews {
   background-color: #FCFCFC;
   background-repeat: no-repeat;
@@ -699,8 +881,28 @@ svg path {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products {
-    background-image: url("/images/background-mobile@2x.jpg");
+  .reviews {
+    background-image: url("../images/background-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    background-image: url("../images/background-tablet@1x.jpg");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .reviews {
+    background-image: url("../images/background-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    background-image: url("../images/background-desktop@1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url("../images/background-desktop@2x.jpg");
   }
 }
 .slider {
