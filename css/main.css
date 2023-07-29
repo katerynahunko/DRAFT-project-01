@@ -890,7 +890,7 @@ svg path {
     background-image: url("../images/background-tablet@1x.jpg");
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .reviews {
     background-image: url("../images/background-tablet@2x.jpg");
   }
@@ -1033,6 +1033,25 @@ svg path {
   }
   .review__face {
     margin-top: 310px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    width: 704px;
+  }
+  .slides > div {
+    width: 704px;
+  }
+  .review__face {
+    margin-top: 410px;
+  }
+  .slider__text {
+    width: 704px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.56px;
+    padding: 28px 80px;
   }
 }
 .contacts {
