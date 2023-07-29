@@ -160,7 +160,8 @@
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column
+
 }
 
 .hero__side-numbers {
@@ -170,6 +171,7 @@
   font-weight: 900;
   letter-spacing: 1.12px;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .hero__side-text {
@@ -177,4 +179,6 @@
   font-family: Montserrat;
   font-size: 8px;
   font-weight: 400;
+  text-align: right;
+  margin-bottom: 20px;
 }

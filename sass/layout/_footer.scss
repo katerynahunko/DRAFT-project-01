@@ -72,6 +72,8 @@
   border-top: 1px solid #e1e1e1;
   padding-bottom: 20px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .rights__text {
@@ -84,9 +86,32 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer__list {
+    margin-top: -170px;
+  }
+
   .footer__label {
     font-size: 26px;
     letter-spacing: 1.04px;
     width: unset;
+  }
+
+  .footer__title {
+font-size: 48px;
+letter-spacing: 2.88px;
+  }
+
+  .footer__phone {
+    text-align: right;
+    margin-top: 34px;
+  }
+
+  .rights {
+    flex-direction: row;
+justify-content: center;
   }
 }
