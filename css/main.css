@@ -78,7 +78,6 @@ svg path {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0;
   }
 }
 
@@ -688,6 +687,11 @@ svg path {
   }
   .products__title {
     font-size: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__wrap {
+    width: 370px;
   }
 }
 .about {

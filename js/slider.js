@@ -32,4 +32,4 @@ function setActiveSlide(index) {
 }
 
 // Задаємо початковий активний слайд та точку (при потребі)
-setActiveSlide(1);
+setActiveSlide(0);

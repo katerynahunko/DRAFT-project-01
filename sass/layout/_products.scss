@@ -253,3 +253,9 @@
     font-size: 34px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .products__wrap {
+    width: 370px;
+}
+}
