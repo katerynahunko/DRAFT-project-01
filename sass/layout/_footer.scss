@@ -1,85 +1,92 @@
 .footer {
-padding-top: 60px;
-padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .footer__label {
-    color: #FCFCFC;
-font-size: 18px;
-font-family: Montserrat;
-font-weight: 700;
-text-transform: uppercase;
-max-width: 232px;
+  color: #fcfcfc;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 232px;
 }
 
 .footer__title {
-    color: #FCFCFC;
-font-size: 34px;
-font-family: Montserrat;
-font-weight: 700;
-letter-spacing: 1.36px;
-text-transform: uppercase;
-margin-top: 16px;
-margin-bottom: 60px;
-max-width: 200px;
+  color: #fcfcfc;
+  font-size: 34px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 1.36px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 60px;
+  max-width: 200px;
 }
 
 .footer__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .footer__item:not(:last-child) {
-        margin-right: 20px;
-    }
+  margin-right: 20px;
+}
 
-    .footer__link {
-        display: flex;
-        border-radius: 50%;
-        fill: #84A178;
-        background-color: #F8D24E;
-        transition: fill 250ms linear;
-    }
+.footer__link {
+  display: flex;
+  border-radius: 50%;
+  fill: #84a178;
+  background-color: #f8d24e;
+  transition: fill 250ms linear;
+}
 
-    .footer__link:hover,
-    .footer__link:focus {
-            fill: #FCFCFC;
-        }
-    
+.footer__link:hover,
+.footer__link:focus {
+  fill: #fcfcfc;
+}
 
-    .footer__phone {
-        text-align: center;
-    }
+.footer__phone {
+  text-align: center;
+}
 
-    .footer__label-tel {
-        color: #131313;
-font-size: 12px;
-font-family: Montserrat;
-font-weight: 700;
-line-height: 186%;
-    }
+.footer__label-tel {
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 186%;
+}
 
-    .footer__tel {
-        color: #fcfcfc;
-        font-size: 12px;
-        font-family: Montserrat;
-        font-weight: 700;
-        line-height: 186%;
-    }
+.footer__tel {
+  color: #fcfcfc;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 186%;
+}
 
-    .rights {
-            border-top: 1px solid #E1E1E1;
-            padding-bottom: 20px;
-            padding-top: 20px;
-    }
+.rights {
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
-    .rights__text {
-        color: #7A7A7A;
-        text-align: center;
-        font-size: 14px;
-        font-family: Montserrat;
-        font-weight: 700;
-        line-height: 152%;
-            }
+.rights__text {
+  color: #7a7a7a;
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 152%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__label {
+    font-size: 26px;
+    letter-spacing: 1.04px;
+    width: unset;
+  }
+}
