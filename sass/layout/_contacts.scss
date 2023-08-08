@@ -145,6 +145,47 @@
     margin-top: unset;
      }
      .contacts__btn-wrapper {
+      display: flex;
       flex-direction: row;
     }
+}
+
+@media screen and (min-width: 1200px) {
+.contacts {
+  margin-top: -164px;
+}
+.contacts__item {
+  width: 368px;
+  padding: 40px;
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+.contacts__business-name {
+  font-size: 16px;
+}
+.contacts__address {
+  font-size: 16px;
+  &::after {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+.contacts__city {
+  font-size: 16px;
+  margin-top: 32px;
+}
+.contacts__business-days {
+  font-size: 16px;
+}
+.contacts__business-hours {
+  font-size: 16px;
+}
+.contacts__link {
+  font-size: 16px;
+}
+.tel {
+  margin-top: 32px;
+  padding-top: 32px;
+}
 }
