@@ -317,7 +317,7 @@ svg path {
 .header__nav-link:not(:last-child) {
   margin-right: 38px;
 }
-.header__nav-link:hover, .header__nav-link:focus, .header__nav-link:active {
+.header__nav-link:hover, .header__nav-link:focus, .header__nav-link:target {
   color: #F8D24E;
   font-weight: 900;
 }
@@ -774,6 +774,28 @@ svg path {
 @media screen and (min-width: 1200px) {
   .products__wrap {
     width: 370px;
+    min-height: 536px;
+  }
+  .products__label {
+    font-size: 30px;
+  }
+  .products__title {
+    font-size: 36px;
+  }
+  .products__item-dscr {
+    width: 246px;
+  }
+  .products__item-title {
+    font-size: 30px;
+    margin-top: 190px;
+  }
+  .products__item-dscr {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.64px;
+  }
+  .products__icon-arrow {
+    margin-bottom: 60px;
   }
 }
 .about {
@@ -859,21 +881,49 @@ svg path {
   }
   .about__image {
     transform: translate(-350px, 0px);
+    width: 330px;
+    height: 330px;
+    border-radius: 200px;
   }
   .about__first-text {
     margin-top: unset;
     text-align: left;
-    margin-left: 240px;
+    margin-left: 346px;
     width: 334px;
   }
   .about__text {
     text-align: left;
-    margin-left: 240px;
+    margin-left: 346px;
     width: 334px;
   }
   .read-more-btn {
-    margin-top: 32px;
-    margin-left: 72px;
+    margin-top: 52px;
+    margin-left: 172px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__label {
+    font-size: 30px;
+  }
+  .about__title {
+    font-size: 36px;
+    margin-bottom: 90px;
+  }
+  .about__image {
+    transform: translate(-560px, -10px);
+    width: 490px;
+    height: 490px;
+    border-radius: 240px;
+  }
+  .about__text {
+    font-size: 16px;
+    width: 520px;
+    margin-left: 450px;
+    margin-top: 10px;
+  }
+  .read-more-btn {
+    margin-top: 120px;
+    margin-left: 100px;
   }
 }
 .advantages {
