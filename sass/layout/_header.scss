@@ -24,6 +24,7 @@
   margin-top: 14px;
   height: 32px;
   padding: 0;
+
 }
 
 .logo-top {
@@ -131,4 +132,36 @@
   .mobile-menu__btn {
 margin-left: 440px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu__btn {
+  display: none;
+   }
+}
+
+.header__navigation {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+  display: flex;
+align-items: center;
+justify-content: center;
+  }
+}
+
+.header__nav-link {
+color: #FCFCFC;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+
+&:not(:last-child) {
+  margin-right: 38px;
+}
+
+&:hover, &:focus, &:active {
+  color: #F8D24E;
+font-weight: 900;
+}
 }

@@ -292,6 +292,36 @@ svg path {
     margin-left: 440px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+.header__navigation {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header__nav-link {
+  color: #FCFCFC;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+}
+.header__nav-link:not(:last-child) {
+  margin-right: 38px;
+}
+.header__nav-link:hover, .header__nav-link:focus, .header__nav-link:active {
+  color: #F8D24E;
+  font-weight: 900;
+}
+
 .hero__container {
   position: relative;
   margin: auto;
@@ -317,9 +347,22 @@ svg path {
   color: #fcfcfc;
   max-width: 250px;
 }
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 38px;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    max-width: 380px;
+  }
+}
 
 .title__span {
   font-size: 34px;
+}
+@media screen and (min-width: 1200px) {
+  .title__span {
+    font-size: 38px;
+  }
 }
 
 .products-btn {
@@ -373,6 +416,12 @@ svg path {
 @media screen and (min-width: 480px) {
   .hero__images {
     margin-bottom: -80px;
+    margin-top: -140px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__images {
+    margin-top: 0px;
   }
 }
 
@@ -444,6 +493,12 @@ svg path {
     position: absolute;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    margin-left: 280px;
+    margin-top: 140px;
+  }
+}
 
 .hero__icon-arrow {
   display: none;
@@ -457,12 +512,28 @@ svg path {
     margin-left: 216px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__icon-arrow {
+    margin-left: 280px;
+    margin-top: 240px;
+  }
+}
 
 .hero__side-info {
   display: flex;
   justify-content: right;
   align-items: flex-start;
   flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .hero__side-info {
+    margin-top: 10px;
+  }
+}
+
+.hero__side-list {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .hero__side-numbers {
@@ -474,6 +545,12 @@ svg path {
   text-transform: uppercase;
   text-align: right;
 }
+@media screen and (min-width: 1200px) {
+  .hero__side-numbers {
+    font-size: 46px;
+    letter-spacing: 1.84px;
+  }
+}
 
 .hero__side-text {
   color: #fcfcfc;
@@ -482,6 +559,11 @@ svg path {
   font-weight: 400;
   text-align: right;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__side-text {
+    font-size: 14px;
+  }
 }
 
 .products {

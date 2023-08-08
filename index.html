@@ -24,6 +24,12 @@
           </use>
         </svg><span class="logo-top__ce">ce</span>
       </a>
+      <div class="header__navigation">
+        <a class="header__nav-link link" href="#hero">Home</a>
+        <a class="header__nav-link link" href="#about">How it's made?</a>
+        <a class="header__nav-link link" href="#products">Our products</a>
+        <a class="header__nav-link link" href="#contacts">Contacts</a>
+      </div>
       <button type="button" class="mobile-menu__btn" data-menu-open>
         <svg class="mobile-menu__btn-icon" width="32" height="32">
           <use href="images/icons.svg#icon-burger">
@@ -74,10 +80,16 @@
     </div>
    </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container hero__container">
       <div class="hero__wrap">
-      <h1 class="title">ice cream made with <span class="title__span">passion</span></h1>
+      <div>
+        <h1 class="title">ice cream made with <span class="title__span">passion</span></h1>
+      <a class="link btn-link" href="#products">
+        <button class="modal-btn products-btn">Products</button>
+      </a>
+        <a class="link hero__link" href="#advantages">How it’s made?</a>
+      </div>
       <div class="hero__side-info">
         <ul class="hero__side-list list">
           <li class="hero__side-items">
@@ -99,10 +111,6 @@
         </ul>
               </div>
             </div>
-      <a class="link btn-link" href="#products">
-      <button class="modal-btn products-btn">Products</button>
-    </a>
-      <a class="link hero__link" href="#advantages">How it’s made?</a>
 
       <p class="hero__text">
         Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!

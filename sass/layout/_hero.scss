@@ -21,10 +21,20 @@
   text-transform: uppercase;
   color: #fcfcfc;
   max-width: 250px;
+
+  @media screen and (min-width: 1200px) {
+font-size: 38px;
+line-height: normal;
+letter-spacing: 1.52px;
+max-width: 380px;
+}
 }
 
 .title__span {
   font-size: 34px;
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
 }
 
 .products-btn {
@@ -80,7 +90,11 @@
 
   @media screen and (min-width: 480px) {
     margin-bottom: -80px;
-  }
+  margin-top: -140px;
+}
+@media screen and (min-width: 480px) {
+margin-top: 0px;
+}
 }
 
 .hero__image-dots {
@@ -143,6 +157,10 @@
     margin-top: 36px;
     position: absolute;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 280px;
+    margin-top: 140px;
+  }
 }
 
 .hero__icon-arrow {
@@ -154,14 +172,25 @@
     margin-top: 140px;
     margin-left: 216px;
   }
+  @media screen and (min-width: 1200px) {
+  margin-left: 280px;
+  margin-top: 240px;
+  }
 }
 
 .hero__side-info {
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  flex-direction: column
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+  margin-top: 10px;
+}
+}
 
+.hero__side-list {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .hero__side-numbers {
@@ -172,6 +201,10 @@
   letter-spacing: 1.12px;
   text-transform: uppercase;
   text-align: right;
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    letter-spacing: 1.84px;
+    }
 }
 
 .hero__side-text {
@@ -181,4 +214,7 @@
   font-weight: 400;
   text-align: right;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+font-size: 14px;
+}
 }
