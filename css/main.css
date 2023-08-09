@@ -103,6 +103,29 @@ svg path {
   transform: translate(-50%, -50%) scale(0.2);
 }
 
+.backdrop-location {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 366px;
+  margin: 20px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+  transition: opacity 300ms linear, visibility 300 linear;
+}
+.backdrop-location.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop-location.is-hidden .modal-location {
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
 .modal {
   min-width: 100%;
   height: auto;
@@ -111,7 +134,7 @@ svg path {
   margin: 0;
   background-color: #fcfcfc;
   position: absolute;
-  top: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
@@ -133,6 +156,53 @@ svg path {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.modal-location {
+  min-width: 100%;
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms linear;
+  padding: 15px;
+}
+
+.modal-location__title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.modal-location-btn {
+  margin-top: 24px;
+  margin-left: 44px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #F8D24E;
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: transparent;
+  min-width: 152px;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.modal-location-btn:hover {
+  background-color: #0A8817;
+}
+
+.modal-location-btn:focus {
+  color: #FCFCFC;
+  background-color: #0A8817;
 }
 
 .main-btn {
@@ -426,7 +496,7 @@ svg path {
 }
 @media screen and (min-width: 1200px) {
   .hero__images {
-    margin-top: -100px;
+    margin-top: 100px;
   }
 }
 

@@ -6,7 +6,7 @@
     margin: 0;
     background-color: #fcfcfc;
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
@@ -29,34 +29,56 @@ align-items: center;
     justify-content: center;
     cursor: pointer;
   }
-  
-//   .modal__icon__close {
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     .modal__btn__close:hover &,
-//     .modal__btn__close:focus & {
-//       fill: var(--accent-color);
-//     }
-//   }
-  
-//   @media screen and (min-width: 480px) {
-//     .modal {
-//       min-width: 450px;
-//       padding: 40px;
-//     }
-//   }
-  
-//   @media screen and (min-width: 768px) {
-//     .modal {
-//       min-width: 450px;
-//     }
-//   }
-  
-//   @media screen and (min-width: 1200px) {
-//     .modal {
-//       width: 528px;
-//       height: 580px;
-//     }
-//   }
 
+  .modal-location {
+    min-width: 100%;
+    // height: auto;
+    // overflow: auto;
+    // overflow-y: scroll;
+    // margin: 0 auto;
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms linear;
+    padding: 15px;
+  }
 
+  .modal-location__title {
+    color: #131313;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 28px;
+  }
+  
+  .modal-location-btn {
+    margin-top: 24px;
+    margin-left: 44px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;   
+      color: #000000;
+      background-color: #F8D24E;
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: transparent;
+  min-width: 152px;
+  transition: background-color 250ms linear,
+  color 250ms linear,
+  }
+  
+  .modal-location-btn:hover {
+      background-color: #0A8817;
+  }
+  
+  .modal-location-btn:focus {
+      color: #FCFCFC;
+      background-color: #0A8817;
+  }    
   
