@@ -86,13 +86,14 @@ svg path {
   z-index: 101;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  border-radius: 10px;
-  border: 2px solid #F8D24E;
-  background: #FCFCFC;
-  transition: opacity 300ms linear, visibility 300 linear;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  transition: opacity 300ms linear, visibility 300ms linear;
+  overflow-y: auto;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -127,14 +128,12 @@ svg path {
 }
 
 .modal {
-  min-width: 100%;
   height: auto;
-  overflow: auto;
   overflow-y: scroll;
   margin: 0;
   background-color: #fcfcfc;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
@@ -152,10 +151,22 @@ svg path {
   background-color: transparent;
   border-radius: 50%;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .modal-location {
@@ -435,7 +446,13 @@ svg path {
   }
 }
 
-.products-btn {
+.btn-link {
+  display: inline-block;
+  padding: 0;
+  max-width: 108px;
+  max-height: 38px;
+  margin-top: 32px;
+  margin-right: 12px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
@@ -448,17 +465,8 @@ svg path {
   border-radius: 8px;
   transition: border 250ms linear;
 }
-.products-btn:hover, .products-btn:focus {
+.btn-link:hover, .btn-link:focus {
   border: 2px solid #0a8817;
-}
-
-.btn-link {
-  display: inline-block;
-  padding: 0;
-  max-width: 108px;
-  max-height: 38px;
-  margin-top: 32px;
-  margin-right: 12px;
 }
 
 .hero__link {
@@ -496,7 +504,7 @@ svg path {
 }
 @media screen and (min-width: 1200px) {
   .hero__images {
-    margin-top: 100px;
+    margin-top: -170px;
   }
 }
 
@@ -571,7 +579,7 @@ svg path {
 @media screen and (min-width: 1200px) {
   .hero__text {
     margin-left: 280px;
-    margin-top: 140px;
+    margin-top: 190px;
   }
 }
 
@@ -581,7 +589,6 @@ svg path {
 @media screen and (min-width: 768px) {
   .hero__icon-arrow {
     display: block;
-    position: absolute;
     fill: #fcfcfc;
     margin-top: 140px;
     margin-left: 216px;
@@ -590,7 +597,7 @@ svg path {
 @media screen and (min-width: 1200px) {
   .hero__icon-arrow {
     margin-left: 280px;
-    margin-top: 240px;
+    margin-top: 290px;
   }
 }
 
@@ -1259,6 +1266,10 @@ svg path {
   width: 72px;
   height: 12px;
   color: #d9d9d9;
+}
+
+.dot.active {
+  background-color: #84a178;
 }
 
 @media screen and (min-width: 480px) {
