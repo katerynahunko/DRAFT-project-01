@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
-    padding: 15px;
+    padding: 20px 150px;
   }
   
   .modal__btn__close {
@@ -48,59 +48,60 @@
     z-index: 100;
   }
   
-  // .modal-open-header {
-  //   background-color: rgba(0, 0, 0, 0.5);
-  // }
     
-  .modal-location {
-    min-width: 100%;
-    // height: auto;
-    // overflow: auto;
-    // overflow-y: scroll;
-    // margin: 0 auto;
-    background-color: #fcfcfc;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms linear;
-    padding: 15px;
-  }
 
-  .modal-location__title {
-    color: #131313;
-    text-align: center;
-    font-family: Seymour One;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    margin-top: 28px;
-  }
+
+
   
-  .modal-location-btn {
-    margin-top: 24px;
-    margin-left: 44px;
-      font-family: 'Montserrat';
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;   
-      color: #000000;
-      background-color: #F8D24E;
-  padding: 12px 36px;
-  border-radius: 10px;
-  border: transparent;
-  min-width: 152px;
-  transition: background-color 250ms linear,
-  color 250ms linear,
-  }
+  // .modal-location {
+  //   min-width: 100%;
+  //   // height: auto;
+  //   // overflow: auto;
+  //   // overflow-y: scroll;
+  //   // margin: 0 auto;
+  //   background-color: #fcfcfc;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%) scale(1);
+  //   transition: transform 250ms linear;
+  //   padding: 15px;
+  // }
+
+  // .modal-location__title {
+  //   color: #131313;
+  //   text-align: center;
+  //   font-family: Seymour One;
+  //   font-size: 16px;
+  //   font-weight: 400;
+  //   line-height: 1.5;
+  //   margin-bottom: 20px;
+  //   margin-top: 28px;
+  // }
   
-  .modal-location-btn:hover {
-      background-color: #0A8817;
-  }
+  // .modal-location-btn {
+  //   margin-top: 24px;
+  //   margin-left: 44px;
+  //     font-family: 'Montserrat';
+  //     font-weight: 600;
+  //     font-size: 14px;
+  //     line-height: 17px;   
+  //     color: #000000;
+  //     background-color: #F8D24E;
+  // padding: 12px 36px;
+  // border-radius: 10px;
+  // border: transparent;
+  // min-width: 152px;
+  // transition: background-color 250ms linear,
+  // color 250ms linear,
+  // }
   
-  .modal-location-btn:focus {
-      color: #FCFCFC;
-      background-color: #0A8817;
-  }    
+  // .modal-location-btn:hover {
+  //     background-color: #0A8817;
+  // }
+  
+  // .modal-location-btn:focus {
+  //     color: #FCFCFC;
+  //     background-color: #0A8817;
+  // }    
   

@@ -137,7 +137,7 @@ svg path {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
-  padding: 15px;
+  padding: 20px 150px;
 }
 
 .modal__btn__close {
@@ -167,53 +167,6 @@ svg path {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-}
-
-.modal-location {
-  min-width: 100%;
-  background-color: #fcfcfc;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms linear;
-  padding: 15px;
-}
-
-.modal-location__title {
-  color: #131313;
-  text-align: center;
-  font-family: Seymour One;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  margin-top: 28px;
-}
-
-.modal-location-btn {
-  margin-top: 24px;
-  margin-left: 44px;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  background-color: #F8D24E;
-  padding: 12px 36px;
-  border-radius: 10px;
-  border: transparent;
-  min-width: 152px;
-  transition: background-color 250ms linear, color 250ms linear;
-}
-
-.modal-location-btn:hover {
-  background-color: #0A8817;
-}
-
-.modal-location-btn:focus {
-  color: #FCFCFC;
-  background-color: #0A8817;
 }
 
 .main-btn {
@@ -499,7 +452,7 @@ svg path {
 }
 @media screen and (min-width: 768px) {
   .hero__images {
-    margin-top: -150px;
+    margin-top: -170px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -512,9 +465,7 @@ svg path {
   position: absolute;
   bottom: 0;
   left: 0;
-  min-width: 280px;
   transform: translate(10px, 0px);
-  transition: transform 800ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 @media screen and (min-width: 480px) {
   .hero__image-dots {
@@ -554,7 +505,6 @@ svg path {
     bottom: 0;
     left: 0;
     transform: translate(30px, -92px);
-    transition: transform 800ms linear;
   }
 }
 
